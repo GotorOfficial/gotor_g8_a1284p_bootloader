@@ -1,0 +1,57 @@
+# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+##############################################################
+
+menu.cpu=Processor
+
+########################################
+## Gotor G8 (sanguino clone) -
+########################################
+gotor.name=gotor V1.0
+
+gotor.upload.tool=arduino:avrdude
+gotor.upload.protocol=arduino
+gotor.upload.maximum_size=126976
+gotor.upload.speed=57600
+
+gotor.bootloader.low_fuses=0xD6
+gotor.bootloader.high_fuses=0xDA
+gotor.bootloader.extended_fuses=0xFD
+gotor.bootloader.unlock_bits=0x3F
+gotor.bootloader.lock_bits=0x0F
+
+gotor.build.mcu=atmega1284p
+gotor.build.f_cpu=16000000L
+gotor.build.board=AVR_SANGUINO
+gotor.build.core=arduino:arduino
+gotor.build.variant=sanguino
+
+gotor.bootloader.file=atmega/ATmegaBOOT_168_atmega1284p.hex
+gotor.bootloader.tool=avrdude
+
+###########################################
+## gotor G8 with Optiboot bootloader
+###########################################
+gotoro.name=Gotor G8 (Optiboot)
+
+gotoro.upload.tool=arduino:avrdude
+gotoro.upload.protocol=arduino
+gotoro.upload.maximum_size=130048
+gotoro.upload.speed=115200
+
+gotoro.bootloader.low_fuses=0xD6
+gotoro.bootloader.high_fuses=0xDE
+gotoro.bootloader.extended_fuses=0xFD
+gotoro.bootloader.unlock_bits=0x3F
+gotoro.bootloader.lock_bits=0x0F
+
+gotoro.build.mcu=atmega1284p
+gotoro.build.f_cpu=16000000L
+gotoro.build.board=AVR_SANGUINO
+gotoro.build.core=arduino:arduino
+gotoro.build.variant=sanguino
+
+gotoro.bootloader.file=atmega/optiboot_atmega1284p.hex
+gotoro.bootloader.tool=avrdude
+
