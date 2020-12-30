@@ -1,5 +1,4 @@
-# gotor_g8_a1284p_bootloader
-atmel A1284P bootloader for arduino
+Gotor G8 (A1284P) README
 
 1.Download the latest Arduino IDE
 
