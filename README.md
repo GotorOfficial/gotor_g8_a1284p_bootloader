@@ -25,13 +25,21 @@ atmel A1284P bootloader for arduino
 
 (1)u8glib.h: No such file or directory
 Sketch > Include Library > Manage libraries
+
 (2)Wait for download to finish
+
 (3)In the “Filter your search” box, type “u8glib”.
+
 (4)Scroll down until you see “U8glib by oliver”. Click on it.
+
 (5)Click “Install”
+
 (6)Wait for installation to finish
+
 (7)Click “Close”
+
 (8)Click “Verify/Build” again to retry
+
 
 12.Connect the Gotor G8 Plus to your computer
 
